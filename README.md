@@ -56,9 +56,11 @@ Building for iOS
 ----------------
 Due to licensing issues, Glowing Bear can't be published on Apple's App store. Fortunately, you can self-deploy apps to your phone for free (!) as of iOS 9 / Xcode 7.
 
-First, add the platform:
+First, remove the android and firefoxos platforms and add the iOS platform:
 
 ```bash
+cordova platform remove android
+cordova platform remove firefoxos
 cordova platform add ios
 ```
 
